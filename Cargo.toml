@@ -1,9 +1,18 @@
 [package]
-name = "statenum"
-version = "0.1.0"
+authors = ["Aiden Zepp <aiden.zepp@protonmail.com>"]
+categories = ["rust-patterns"]
+description = "A library for enabling enums in state-pattern logic."
+documentation = "https://docs.rs/statenum"
 edition = "2021"
+keywords = ["state", "enum", "derive"]
+license = "MIT"
+name = "statenum"
+repository = "https://github.com/aidenzepp/statenum"
+version = "1.0.0"
 
 [lib]
+name = "statenum"
+path = "src/lib.rs"
 proc-macro = true
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -11,7 +20,7 @@ proc-macro = true
 [dependencies]
 proc-macro2 = "1.0"
 quote = "1.0"
-syn = { version = "2.0", features = ["full"] }
+syn = { version = "2.0", features = ["derive"] }
 
 [dev-dependencies]
 trybuild = "1.0"
